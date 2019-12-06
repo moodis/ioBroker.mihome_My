@@ -36,7 +36,10 @@ adapter.on('stateChange', (id, state) => {
         if (objects[channelId] && objects[channelId].native) {
             const device = hub.getSensor(objects[channelId].native.sid);
             if (device && device.Control) {
+                adapter.log.warn('attr:' + attr);
+                adapter.log.warn('state:' + state.val);
                 device.Control(attr, state.val);
+//=================================================================
             } else {
                 adapter.log.warn('Cannot control ' + id);
             }
@@ -276,7 +279,7 @@ function startMihome() {
 
     hub.on('message', msg => {
         setConnected(true);
-        adapter.log.debug('RAW: ' + JSON.stringify(msg));
+        adapter.log.debug('RAW: ' + JSON.stringify(msg));       // Здесь вывод в Log ioBrokera строк debug RAW:
     });
     hub.on('warning', msg => adapter.log.warn(msg));
     hub.on('error', error => {
@@ -284,16 +287,20 @@ function startMihome() {
         stopMihome();
     });
     hub.on('device', (device, name) => {
-        if (!objects[adapter.namespace + '.devices.' + device.className.replace('.', '_') + '_' + device.sid]) {
-            adapter.log.debug('NEW device: ' + device.sid + '(' + device.type + ')');
-            createDevice(device, name);
-        } else {
-            adapter.log.debug('known device: ' + device.sid + '(' + device.type + ')');
+        if (device.sid !== '000000000000') {
+            if (!objects[adapter.namespace + '.devices.' + device.className.replace('.', '_') + '_' + device.sid]) {
+                adapter.log.debug('NEW device: ' + device.sid + '(' + device.type + ')');       // Здесь вывод в Log ioBrokera строк NEW device:
+                createDevice(device, name);
+            } else {
+                adapter.log.debug('known device: ' + device.sid + '(' + device.type + ')');
+            }
         }
     });
     hub.on('data', (sid, type, data) => {
-        adapter.log.debug('data: ' + sid + '(' + type + '): ' + JSON.stringify(data));
-        updateStates(sid, type, data);
+        if (sid !== '000000000000') {
+                adapter.log.debug('data: ' + sid + '(' + type + '): ' + JSON.stringify(data));      // data: 000000000000(gateway): {"relay_status":"off"}
+                updateStates(sid, type, data);
+        }
     });
 
     if (!connTimeout && adapter.config.heartbeatTimeout) {
