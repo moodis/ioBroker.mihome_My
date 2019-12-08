@@ -3,13 +3,22 @@
 
 
 ## Requirements
-### Android 
-
-## Usage
-You can use small button on temperature sensor to trigger "double Press" event. Just press twice within 5 seconds. You can set this interval in settings, but do not set it over 10 seconds.
+  Этот адаптер является модификацией адаптера iobroker.mihome версии 1.2.9 и позволяет и позволяет управлять кондиционером подключенным с помощью ACpartner.v3 (возможно будет работать и с версией v2, но нет устройства для проверки).
+  Для начала использования:
+  - установите на смартфон приложение Aqara Home (https://play.google.com/store/apps/details?id=com.lumiunited.aqarahome),
+  - зарегестрируйтесь в приложении Aqara Home,
+  - выберите в настройках регион "Материковый китай",
+  - добавьте acpartner в приложение Aqara Home,
+  - обновите прошивку acpartner (нажмите на иконку кодиционера, затем три точки в правом верхнем углу, затем нажмите самый нижний пункт     "Версия ПО"), в результате на acpartner будет установлена прошивка Aqara (при использовании приложения MiHome была от Xiaomi),
+  - зарегестрируйтесь на сайте https://opencloud.aqara.cn/ с тем же паролем и логином как и в приложении Aqara Home (подтверждение     регистрации может занять некоторое время, у меня было около 6 часов),
+  - затем перейдите в консоль (https://opencloud.aqara.cn/console),выберите Gateway LAN слева, заполните поля "Aqara account" и "Password" и нажмите кнопку Submit - вы увидите свой Air Conditioning Controller и кнопку включения сетевого протокола, нажав на которую вы разрешите LAN доступ и увидите ключ сети, который необходим для настройки адаптера в ioBroker. 
+  
+  
+  
+  
 
 ### Supported devices
-
+- Все доступные на момент версии 1.2.9 и поддержка управления кондиционером через acpartner.v3
 - gateway -           Xiaomi RGB Gateway
 - sensor_ht -         Xiaomi Temperature/Humidity
 - weather.v1 -        Xiaomi Temperature/Humidity/Pressure
