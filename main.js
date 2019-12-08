@@ -281,6 +281,7 @@ function startMihome() {
         adapter.log.debug('RAW: ' + JSON.stringify(msg));       // Здесь вывод в Log ioBrokera строк debug RAW:
     });
     hub.on('warning', msg => adapter.log.warn(msg));
+    hub.on('debug', msg => adapter.log.debug(msg));
     hub.on('error', error => {
         adapter.log.error(error);
         stopMihome();
