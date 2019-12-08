@@ -36,10 +36,9 @@ adapter.on('stateChange', (id, state) => {
         if (objects[channelId] && objects[channelId].native) {
             const device = hub.getSensor(objects[channelId].native.sid);
             if (device && device.Control) {
-                adapter.log.warn('attr:' + attr);
-                adapter.log.warn('state:' + state.val);
+                adapter.log.debug('attr:' + attr);              // Для отладки
+                adapter.log.debug('state:' + state.val);        // Для отладки
                 device.Control(attr, state.val);
-//=================================================================
             } else {
                 adapter.log.warn('Cannot control ' + id);
             }
@@ -287,7 +286,7 @@ function startMihome() {
         stopMihome();
     });
     hub.on('device', (device, name) => {
-        if (device.sid !== '000000000000') {
+        if (device.sid !== '000000000000') {        // Игнорируем устройства с пустым sid
             if (!objects[adapter.namespace + '.devices.' + device.className.replace('.', '_') + '_' + device.sid]) {
                 adapter.log.debug('NEW device: ' + device.sid + '(' + device.type + ')');       // Здесь вывод в Log ioBrokera строк NEW device:
                 createDevice(device, name);
@@ -297,7 +296,7 @@ function startMihome() {
         }
     });
     hub.on('data', (sid, type, data) => {
-        if (sid !== '000000000000') {
+        if (sid !== '000000000000') {               // Игнорируем устройства с пустым sid
                 adapter.log.debug('data: ' + sid + '(' + type + '): ' + JSON.stringify(data));      // data: 000000000000(gateway): {"relay_status":"off"}
                 updateStates(sid, type, data);
         }
