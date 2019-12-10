@@ -43,16 +43,16 @@
   The process of enabling LAN access and receiving GATEWAY KEY can be of some difficulty - the process is described below.
   
   To start using:
-  - Install the Aqara Home application on your smartphone (https://play.google.com/store/apps/details?id=com.lumiunited.aqarahome),
-  - register in the Aqara Home application,
-  - select the "Mainland China" region in the settings,
-  - add acpartner to the Aqara Home app,
-  - update the acpartner firmware (click on the encoder icon, then the three dots in the upper right corner, then click the lowest point “Software Version”), as a result, Aqara firmware will be installed on acpartner (when using the MiHome application it was from Xiaomi),
-  - register on the site https://opencloud.aqara.cn/ with the same password and login as in the Aqara Home application (registration confirmation may take some time, I had about 6 hours),
-  - log in to the console https://opencloud.aqara.cn/console/
-  - create an application on the tab https://opencloud.aqara.cn/console/app-management with the type "Device access" (I’m not sure about the need for this item (because I did it yet), so you can try to skip it),
-  - then go to the console https://opencloud.aqara.cn/console and select Gateway LAN on the left, fill in the "Aqara account" and "Password" fields and click the Submit button - you will see your Air Conditioning Controller and the network protocol enable button by clicking to which you allow LAN access and you will see the network key, which is necessary to configure the adapter in ioBroker.
-  - install the adapter from this page, in the settings enter the key obtained above.
+  - Install the Aqara Home application on your smartphone (https://play.google.com/store/apps/details?id=com.lumiunited.aqarahome),
+  - register in the Aqara Home application,
+  - select the "Mainland China" region in the settings,
+  - add acpartner to the Aqara Home app,
+  - update the acpartner firmware (click on the encoder icon, then the three dots in the upper right corner, then click the lowest point “Software Version”), as a result, Aqara firmware will be installed on acpartner (when using the MiHome application it was from Xiaomi),
+  - register on the site https://opencloud.aqara.cn/ with the same password and login as in the Aqara Home application (registration confirmation may take some time, I had about 6 hours),
+  - log in to the console https://opencloud.aqara.cn/console/
+  - create an application on the tab https://opencloud.aqara.cn/console/app-management with the type "Device access" (I’m not sure about the need for this item (because I did it yet), so you can try to skip it),
+  - then go to the console https://opencloud.aqara.cn/console and select Gateway LAN on the left, fill in the "Aqara account" and "Password" fields and click the Submit button - you will see your Air Conditioning Controller and the network protocol enable button by clicking to which you allow LAN access and you will see the network key, which is necessary to configure the adapter in ioBroker.
+  - install the adapter from this page, in the settings enter the key obtained above.
   
   The following files have been modified with respect to the official version of the adapter:
   - main.js
@@ -62,7 +62,7 @@
   - THSensor.js
 
 
-### Поддерживаемые устройства/Supported devices:
+### Поддерживаемые устройства/Supported Devices:
 - Все доступные на момент версии 1.2.9 и поддержка управления кондиционером через acpartner.v3
 - gateway -           Xiaomi RGB Gateway
 - sensor_ht -         Xiaomi Temperature/Humidity
