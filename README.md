@@ -98,6 +98,10 @@
 - lock_aq1 -          Xiaomi Lock
 
 ## Changelog
+
+### 1.3.0 (2020-01-16)
+* (algar42) Ability to add devices with missing model by their SID ([e.g. for Aqara two-channel relay](https://github.com/algar42/ioBroker.mihome#usage))
+
 ### 1.2.9 (2019-11-15)
 * (Diginix) Fixed pressure range and values of Aqara weather sensor
 
