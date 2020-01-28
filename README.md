@@ -64,7 +64,7 @@
 
 ### Поддерживаемые устройства/Supported Devices:
 - Все доступные на момент версии 1.2.9 и поддержка управления кондиционером через acpartner.v3
-- acpartner.v3        Aqara AC Partner
+- acpartner.v3 -      Aqara AC Partner
 - gateway -           Xiaomi RGB Gateway
 - sensor_ht -         Xiaomi Temperature/Humidity
 - weather.v1 -        Xiaomi Temperature/Humidity/Pressure
