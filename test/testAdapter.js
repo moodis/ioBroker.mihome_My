@@ -74,7 +74,7 @@ var checkStates = {
         "lc": 1509870303574
     },
     "mihome.0.devices.weather_v1_1652761251244.temperature": {
-        "val": 20.3,
+        "val": 22.3,
         "ack": true,
         "ts": 1509870303587,
         "q": 0,
