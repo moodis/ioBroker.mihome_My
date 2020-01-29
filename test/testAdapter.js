@@ -74,7 +74,7 @@ var checkStates = {
         "lc": 1509870303574
     },
     "mihome.0.devices.weather_v1_1652761251244.temperature": {
-        "val": 22.3,
+        "val": 20.3,
         "ack": true,
         "ts": 1509870303587,
         "q": 0,
@@ -90,7 +90,7 @@ var checkStates = {
         "lc": 1509870303590
     },
     "mihome.0.devices.weather_v1_1652761251244.pressure": {
-        "val": 1001.2,
+        "val": 1334.76,
         "ack": true,
         "ts": 1509870303593,
         "q": 0,
