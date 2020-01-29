@@ -106,5 +106,7 @@
 ### 1.2.9 (2019-11-15)
 * (Diginix) Fixed pressure range and values of Aqara weather sensor
 
+## License
+MIT
 
-Copyright (c) 2017-2019 bluefox <dogafox@gmail.com>
+Copyright (c) 2017-2020 bluefox dogafox@gmail.com
