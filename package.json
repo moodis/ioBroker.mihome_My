@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ioBroker/ioBroker.mihome.git"
+    "url": "git+https://github.com/VLGorskij/ioBroker.mihome.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^1.0.3"
