@@ -15,7 +15,7 @@
       "email": "dogafox@gmail.com"
     }
   ],
-  "homepage": "https://github.com/ioBroker/ioBroker.mihome",
+  "homepage": "https://github.com/VLGorskij/ioBroker.mihome",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -36,7 +36,7 @@
     "chai": "^4.1.2"
   },
   "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.mihome/issues"
+    "url": "https://github.com/VLGorskij/ioBroker.mihome/issues"
   },
   "main": "main.js",
   "readmeFilename": "README.md"
