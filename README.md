@@ -109,4 +109,4 @@
 ## License
 MIT
 
-Copyright (c) 2017-2020 bluefox dogafox@gmail.com
+Copyright (c) 2019-2020 Vladimir <vlgorskij@yandex.ru>
