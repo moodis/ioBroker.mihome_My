@@ -1,7 +1,7 @@
 {
     "common": {
-        "name": "mihome",
-        "title": "Xiaomi MiHome Gateway",
+        "name": "mihome_My",
+        "title": "Xiaomi MiHome Gateway My",
         "desc": {
             "en": "Xiaomi MiHome gateway support",
             "de": "Xiaomi MiHome Gateway Unterstützung",
