@@ -248,9 +248,9 @@
             "bluefox <dogafox@gmail.com>"
         ],
         "license": "MIT",
-        "readme": "https://github.com/VLGorskij/ioBroker.mihome/blob/master/README.md",
+        "readme": "https://github.com/moodis/ioBroker.mihome_My/blob/master/README.md",
         "icon": "mihome.png",
-        "extIcon": "https://raw.githubusercontent.com/VLGorskij/ioBroker.mihome/master/admin/mihome.png",
+        "extIcon": "https://raw.githubusercontent.com/moodis/ioBroker.mihome_My/master/admin/mihome.png",
         "type": "iot-systems",
         "enabled": true
     },

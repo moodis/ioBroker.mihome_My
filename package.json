@@ -15,7 +15,7 @@
       "email": "dogafox@gmail.com"
     }
   ],
-  "homepage": "https://github.com/VLGorskij/ioBroker.mihome",
+  "homepage": "https://github.com/moodis/ioBroker.mihome_My",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VLGorskij/ioBroker.mihome.git"
+    "url": "git+https://github.com/moodis/ioBroker.mihome_My.git"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^1.0.3"
@@ -36,7 +36,7 @@
     "chai": "^4.1.2"
   },
   "bugs": {
-    "url": "https://github.com/VLGorskij/ioBroker.mihome/issues"
+    "url": "https://github.com/moodis/ioBroker.mihome_My/issues"
   },
   "main": "main.js",
   "readmeFilename": "README.md"
